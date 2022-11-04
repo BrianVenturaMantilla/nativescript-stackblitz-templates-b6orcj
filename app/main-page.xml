@@ -1,8 +1,26 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
     <ActionBar title="My App" icon="" />
     <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+       <!-- <Label text="Bienvenido a mi primer app en NativeScript" class="text-3xl text-center" /> -->
+
+        <Button text="TAP" tap="{{ onTap }}" class="-primary -rounded-lg" />
         <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+        <Image class="myclassimage"
+  src="https://mallaventura.pe/uploads/shares/marcas/Logos%20marcas/cibertec.png"
+  stretch="aspectFill"
+/>
+        <TextField class="Ingrese su carrera" hint="Enter text" color="blue" backgroundColor="white" />
+        <TextField class="Ingrese su clave" hint="Enter text" color="blue" backgroundColor="white" />
+        <Button text="Ingresar" Style="margin-top:100px;height:100px" class="-primary -rounded-lg" />
+        <Button text="Registrar" Style="margin-top:50px;height:100px;background-color:green;" class="-primary -rounded-lg" />
+        <DatePicker
+  year="1995"
+  month="10"
+  day="22"
+  loaded="onDatePickerLoaded"
+  date="{{ date }}"
+  minDate="{{ minDate }}"
+  maxDate="{{ maxDate }}"
+/>
     </StackLayout>
 </Page>
